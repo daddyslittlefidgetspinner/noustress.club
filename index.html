@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>noustress.club - Relaxing Sound Effects of Finland to Boost Concentration and Stress Management.</title>
+		<meta name="description" content="Relaxation Web Application | Helps Sleep | Boosts Concentration | BETA">
+		<meta name="keywords" content="Relax, Sleep, Stress, Stress Management, Chilling, Anxiety, Self-Help, Meditation, Calming, Finland">
+		<meta name="author" content="noustress.club">
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+		<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--<link rel="icon" href="pictures/favicon.ico" />-->
+	</head>
+	<body>
+		<ons-page>
+		  <ons-toolbar>
+			<div class="left">
+			  <ons-toolbar-button onclick="prev()">
+				<ons-icon icon="md-chevron-left"></ons-icon>
+			  </ons-toolbar-button>
+			</div>
+			<div class="center">noustress.club - Finland</div>
+			<div class="right">
+			  <ons-toolbar-button onclick="next()">
+				<ons-icon icon="md-chevron-right"></ons-icon>
+			  </ons-toolbar-button>
+			</div>
+		  </ons-toolbar>
+
+		  <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+			<ons-carousel-item style="background-color: #085078;">
+				<div id="vidBG">
+					<img id="reindeerBG" src="pictures/reindeer.png" alt="ReindeerPen"></img>
+				</div>
+				<div id="titleCenter">
+					<h1 id="titleText">Reindeer Pen</h1>
+					<img src="pictures/reindeerIcon.png" id="reindeerIcon" alt="reindeer">
+					<audio id="myRange" loop="loop" data-audio="0" controls="controls" style="z-index: 9999999">
+						<source src="sounds/reindeers.wav" type="audio/wav">
+					</audio>
+				</div>	
+			</ons-carousel-item>
+			<ons-carousel-item style="background-color: #373B44;">
+				<div id="vidBG">
+					<img id="reindeerBG" src="pictures/winterseason.png" alt="WinterSeason" style="margin-top: -200px"></img>
+				</div>
+				<div id="titleCenter">
+					<h1 id="titleText">Walking on Snow</h1>
+					<img src="pictures/snowflake.png" id="reindeerIcon" alt="snowflake">
+					<audio id="myRange" loop="loop" data-audio="0" controls="controls" style="z-index: 9999999">
+						<source src="sounds/walkingonsnow.wav" type="audio/wav">
+					</audio>
+				</div>	
+			</ons-carousel-item>
+			<ons-carousel-item style="background-color: #D38312;">
+				<div id="vidBG">
+					<img id="reindeerBG" src="pictures/auroraBorealis.png" alt="auroraBorealis" ></img>
+				</div>
+				<div id="titleCenter">
+					<h1 id="titleText">Northern Lights</h1>
+					<img src="pictures/borealisIcon.png" id="reindeerIcon" alt="auroraBorealisIcon">
+					<audio id="myRange" loop="loop" data-audio="0" controls="controls" style="z-index: 9999999">
+						<source src="sounds/northernlights.mp3" type="audio/mp3">
+					</audio>
+				</div>
+			</ons-carousel-item>
+			<ons-carousel-item style="background-color: #FF0000;">
+				<div id="vidBG">
+					<img id="reindeerBG" src="pictures/xdseagullmegalol.jpg" alt="seagulls" ></img>
+				</div>
+				<div id="titleCenter">
+					<h1 id="titleText">Seagulls</h1>
+					<img src="pictures/lokki.png" id="reindeerIcon" alt="lokkiIcon">
+					<audio id="myRange" loop="loop" data-audio="0" controls="controls" style="z-index: 9999999">
+						<source src="sounds/lokit.mp3" type="audio/mp3">
+					</audio>
+				</div>	
+			</ons-carousel-item>
+            <ons-carousel-item style="background-color: #0B6623;">
+				<div id="vidBG">
+					<img id="reindeerBG" src="pictures/forest.png" alt="auroraBorealis" ></img>
+				</div>
+				<div id="titleCenter">
+					<h1 id="titleText">Forest in spring</h1>
+					<img src="pictures/puu.png" id="reindeerIcon" alt="puuIcon">
+					<audio id="myRange" loop="loop" data-audio="0" controls="controls" style="z-index: 9999999">
+						<source src="sounds/forest.mp3" type="audio/mp3">
+					</audio>
+				</div>	
+			</ons-carousel-item>
+		  </ons-carousel>
+		</ons-page>
+		
+		<script>
+			var prev = function() {
+				var carousel = document.getElementById('carousel');
+				carousel.prev();
+			};
+
+			var next = function() {
+				var carousel = document.getElementById('carousel');
+				carousel.next();
+			};
+
+			ons.ready(function() {
+				var carousel = document.addEventListener('postchange', function(event) {
+					console.log('Changed to ' + event.activeIndex)
+				});
+			});
+		</script>		
+	</body>
+</html>
