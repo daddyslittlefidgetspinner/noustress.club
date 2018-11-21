@@ -7,11 +7,11 @@
 
 <!-- versionCode is optional and Android only -->
 
-  <name>noustress.club - Finland</name>
+	<name>noustress.club - Finland</name>
 
-  <description>
-
-  </description>
+	<description>
+		Finland themed mobile relaxation application.
+	</description>
 
   <author email="innocase.group@gmail.com">
       noustress.club
