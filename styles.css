@@ -1,0 +1,73 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	position:Fixed;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 25px;
+}
+
+#reindeerIcon{
+	position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 70px;
+	height: 70px;
+}
+
+#reindeerBG{
+	left: 18%;
+
+}
+
+#wrapper{
+	height: 100%;
+	overflow:hidden;
+}
+
+#titleText{
+	position:absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color:#fff;
+	margin-top: -100px;
+}
+
+#subTitleText{
+	color:#fff;
+	font-size: 16px;
+	letter-spacing: 10px;
+	margin-top: -50px;
+}
+
+#myRange{
+	top: 65%;
+	left: 50%;
+	width: 20%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (max-width: 768px) {	
+
+	h1, 
+	#subTitleText { 
+		font-size: 12px;
+        letter-spacing: 6px;
+    }
+	 
+}
