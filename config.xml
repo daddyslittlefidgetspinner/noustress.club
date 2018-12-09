@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.phonegap.example"
+    id          = "http://myy.haaga-helia.fi/~a1700311/noustress.club/"
     versionCode = "10"
-    version     = "1.0.0" >
-
-<!-- versionCode is optional and Android only -->
+    version     = "1.0.0">
 
 	<name>noustress.club</name>
 
@@ -13,9 +11,10 @@
 		Finland themed mobile relaxation application.
 	</description>
 
-  <author email="innocase.group@gmail.com">
-      noustress.club
-  </author>
+	<author email="innocase.group@gmail.com">
+		noustress.club
+	</author>
+    <content src="index.html" />
     <platform name="android">
         <preference name="SplashMaintainAspectRatio" value="true"/>
         <preference name="SplashShowOnlyFirstTime" value="true"/>
